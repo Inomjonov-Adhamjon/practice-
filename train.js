@@ -1,3 +1,25 @@
+// TASK F:
+
+// Yagona string argumentga ega findDoublers nomli function tuzing
+// Agar stringda bittadan ortiq bir xil harflar ishtirok etgan bo'lsa
+// true yokida false natija qaytarsin.
+
+function findDoubles(word) {
+    for (let i = 0; i < word.length; i++) {
+        for (let j = 0; j < word.length; j++) {
+            if (word[i] === word[j] && i !== j) {    // harflar bir xil va ularning indexlari har xil
+                return true                          // bolsa true qaytaradi   
+            }
+        }
+    }
+    return false
+};
+console.log(findDoubles("hello"));
+console.log(findDoubles("Mit"));
+
+
+
+
 // TASK E
 
 // Shunday function tuzing, u bitta string argumentni 
@@ -11,12 +33,12 @@
 // join("") esa teskari qilingan individual stringlarni 
 // qaytadan bir string ga birlashtiradi.
 
-function getReverse(a) {
-    return a.split("").reverse().join("")
-};
+// function getReverse(a) {
+//     return a.split("").reverse().join("")
+// };
 
-console.log(getReverse("hello"));
-console.log(getReverse("devex"));
+// console.log(getReverse("hello"));
+// console.log(getReverse("devex"));
 
 
 // yechim: 2
