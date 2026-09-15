@@ -8,7 +8,7 @@
 print("===== what is class =====")
 
 
-class person ():
+class Person ():
     # state
     messege = "class state property"
 
@@ -29,9 +29,9 @@ class person ():
         print("class: static method executed")
 
 
-person1 = person("adam", 21)
-person2 = person("marco", 22)
-person3 = person("john", 23)
+person1 = Person("adam", 21)
+person2 = Person("marco", 22)
+person3 = Person("john", 23)
 
 # ordinary sate
 print("person name:", person1.name)
@@ -42,22 +42,22 @@ person1.introduce()
 person2.say_age()
 
 
-print("===== static classes =====")
+print("===== ordinary and static properties =====")
 # static = class bilan birga keladigan propertylar
 
 # static state
-new_messege = person.messege
+new_messege = Person.messege
 print("new messege", new_messege)
 
 # static methods
-person.explain()
+Person.explain()
 
 print("===== special mehtods =====")
 # common special methods
 # __init__, __new__, __str__, __call__, __getitem__, __eq__, __len__
 
 
-class car():
+class Car():
     # state
     description = "this class makes cars"
 
@@ -78,19 +78,19 @@ class car():
         print(f"{self.name} stopped the engine")
 
     def __str__(self):
-        return f"car name: {self.name}, manufactured year: {self.year}"
+        return f"car name: {self.name} was produced in {self.year} year"
 
     def __call__(self):
         print("object is called like a function")
         return True
 
 
-my_car = car("ferrari", 2024)
+my_car = Car("ferrari", 2024)
 my_car.start_engine()
 my_car.stop_engine()
 
 print("------")
-your_car = car("ferrari", 2020)
+your_car = Car("ferrari", 2020)
 print(your_car)
 result = your_car()
 print("result", result)
