@@ -1,26 +1,47 @@
+// TASK K: 
+
+// Shunday function yozing, u string qabul qilsin 
+// va string ichidagi unli harflar sonini qaytarsin.
+// MASALAN: countVowels("string") return 1;
+
+function checkVowels(word) {
+    let count = 0
+    for (let i = 0; i < word.length; i++) {
+        if (word[i] === "a" || word[i] === "o" || word[i] === "u" || word[i] === "e" || word[i] === "i") {
+            count++
+        }
+    }
+    return count
+}
+
+console.log(checkVowels("string"))
+
+
+
+
 // TASK G:
 
 // Yagona parametrga ega function tuzing.
 // Va bu function parametr orqalik integer ma'lumot turlariga ega bo'lgan bir arrayni qabul qilsin.
 // Ushbu function bizga arrayning tarkibidagi birinchi eng katta qiymatning indeksini qaytarsin.
 
-function getHighestIndex(num) {
-    let stored = num[0]
-    let index = 0
+// function getHighestIndex(num) {
+//     let stored = num[0]
+//     let index = 0
 
-    for (let i = 0; i < num.length; i++) {
-        if (num[i] > stored) {
-            stored = num[i]
-            index = i
-        }
-    }
-    return {
-        highestIndex: index,
-        highestNumber: stored
-    }
-}
+//     for (let i = 0; i < num.length; i++) {
+//         if (num[i] > stored) {
+//             stored = num[i]
+//             index = i
+//         }
+//     }
+//     return {
+//         highestIndex: index,
+//         highestNumber: stored
+//     }
+// }
 
-console.log(getHighestIndex([5, 21, 12, 21, 8]))
+// console.log(getHighestIndex([5, 21, 12, 21, 8]))
 
 
 

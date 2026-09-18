@@ -54,8 +54,7 @@ try:
 except Exception as err:
     print("no target amount state found", err)
 
-
+# getter vs setter
 print("holder_name before", my_account.holder)
-
 my_account.holder = "john"
 print("holder_name after", my_account.holder)
