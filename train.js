@@ -1,20 +1,39 @@
+// TASK L
+// Shunday function yozing, u string qabul qilsin va string ichidagi 
+// hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan 
+// stringni qaytarsin.
+
+
+// yechim:
+function reverseSentence(str) {
+    const word = str.split(" ")
+    const teskari = word.map((word) => word.split("").reverse().join(""))
+
+    return teskari.join(" ")
+};
+
+console.log(reverseSentence("we like coding"));
+
+
+
+
 // TASK K: 
 
 // Shunday function yozing, u string qabul qilsin 
 // va string ichidagi unli harflar sonini qaytarsin.
 // MASALAN: countVowels("string") return 1;
 
-function checkVowels(word) {
-    let count = 0
-    for (let i = 0; i < word.length; i++) {
-        if (word[i] === "a" || word[i] === "o" || word[i] === "u" || word[i] === "e" || word[i] === "i") {
-            count++
-        }
-    }
-    return count
-}
+// function checkVowels(word) {
+//     let count = 0
+//     for (let i = 0; i < word.length; i++) {
+//         if (word[i] === "a" || word[i] === "o" || word[i] === "u" || word[i] === "e" || word[i] === "i") {
+//             count++
+//         }
+//     }
+//     return count
+// }
 
-console.log(checkVowels("string"))
+// console.log(checkVowels("string"))
 
 
 
